@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интернет-магазин</title>
+     <link rel="stylesheet" href="style.css">
+      </head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Добро пожаловать в наш Интернет-магазин</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <div class="navbar container">
+        <a href="#">Главная</a>
+        <a href="index 2.html">Каталог</a>
+        <a href="#">О нас</a>
+        <a href="#">Контакты</a>
+        <a href="#">Корзина</a>
+    </div>
+
+    <!-- Product Section -->
+    <div class="container">
+        <h2>Наши товары</h2>
+        <div class="products">
+            <!-- Product Card 1 -->
+     <div class="product-card" onclick="toggleFlip(event)">
+    <div class="product-inner">
+        <div class="product-front">
+            <img src="https://via.placeholder.com/200" alt="Продукт 1">
+            <h3>Продукт 1</h3>
+            <div class="price">₽ 1500</div>
+            <button class="add-to-cart">В корзину</button>
+        </div>
+        <div class="product-back">
+            <h3>Описание продукта</h3>
+            <p>Это продукт с высоким качеством и отличным дизайном.</p>
+        </div>
+    </div>
+</div>
+            <!-- Product Card 2 -->
+          <div class="product-card" onclick="toggleFlip(event)">
+    <div class="product-inner">
+        <div class="product-front">
+            <img src="https://via.placeholder.com/200" alt="Продукт 1">
+            <h3>Продукт 1</h3>
+            <div class="price">₽ 1500</div>
+            <button class="add-to-cart">В корзину</button>
+        </div>
+        <div class="product-back">
+            <h3>Описание продукта</h3>
+            <p>Это продукт с высоким качеством и отличным дизайном.</p>
+        </div>
+    </div>
+</div>
+
+            <!-- Product Card 3 -->
+            <div class="product-card" onclick="toggleFlip(event)">
+                <div class="product-inner">
+                    <!-- Front Side -->
+                    <div class="product-front">
+                        <img src="https://via.placeholder.com/200" alt="Продукт 3">
+                        <h3>Продукт 3</h3>
+                        <div class="price">₽ 3500</div>
+
+                    </div>
+                    <!-- Back Side -->
+                    <div class="product-back">
+                        <h3>Описание продукта</h3>
+                        <p>Идеальный выбор для ценителей стиля.</p>
+<button class="add-to-cart">В корзину</button>                   
+ </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Интернет-магазин. Все права защищены.</p>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
