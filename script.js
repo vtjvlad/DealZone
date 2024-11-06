@@ -179,7 +179,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const userInfo = document.createElement('div');
         userInfo.innerHTML = `Welcome, ${user.first_name}! <br> Your username: ${user.username}`;
         userInfo.style.textAlign = 'center';
-        document.body.insertBefore(userInfo, appContent);
+        document.user.insertBefore(userInfo, appContent);
 
         appContent.style.display = 'flex';
         logoutButton.style.display = 'flex';
