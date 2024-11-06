@@ -221,7 +221,7 @@ document.addEventListener('DOMContentLoaded', () => {
         userInfo.classList.add('user-info'); // Добавляем класс для стилизации
 
         // Профильное фото (если доступно)
-        const userPhotoUrl = user?.photo_url || default-profile.png'; // Если фото нет, используется изображение по умолчанию
+            const userPhotoUrl = user.photo_url ? user.photo_url : default-profile.png'; // Если фото нет, используется изображение по умолчанию
         const userPhoto = `<img src="${userPhotoUrl}" alt="Profile Photo" class="profile-photo">`;
 
         // Имя пользователя и логин
