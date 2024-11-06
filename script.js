@@ -229,7 +229,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const userUsername = user.username ? `<p>@${user.username}</p>` : '';
 
         // Добавляем информацию в блок
-        userInfo.innerHTML = `
+        user.innerHTML = `
             <div class="profile">
                 ${userPhoto}
                 ${userName}
