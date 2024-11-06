@@ -179,7 +179,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const userInfo = document.createElement('div');
         userInfo.innerHTML = `Welcome, ${user.first_name}! <br> Your username: ${user.username}`;
         userInfo.style.textAlign = 'center';
-        document.block.insertBefore(userInfo, appContent);
+        document.body.insertBefore(userInfo, appContent);
 
         appContent.style.display = 'block';
         logoutButton.style.display = 'block';
@@ -229,7 +229,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const userUsername = user.username ? `<p>@${user.username}</p>` : '';
 
         // Добавляем информацию в блок
-        body.innerHTML = `
+        userInfo.innerHTML = `
             <div class="profile">
                 ${userPhoto}
                 ${userName}
@@ -238,7 +238,7 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
 
         // Вставляем блок перед основным контентом
-        document.body.insertBefore(userInfo, appContent);
+        document.user.insertBefore(userInfo, appContent);
 
         // Показываем основной контент
         appContent.style.display = 'block';
