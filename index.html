@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head><script src="telegram-web-app.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DealZone</title>
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="logo.css">
+<link rel="stylesheet" href="header.css">
+<link rel="stylesheet" href="container.css">
+<link rel="stylesheet" href="burgermenu.css">
+<link rel="stylesheet" href="navbar.css">
+<link rel="stylesheet" href="navbarbot.css">
+<link rel="stylesheet" href="product.css">
+<link rel="stylesheet" href="product-card.css">
+
+<link rel="stylesheet" href="content-secotion.css">
+<link rel="stylesheet" href="cart.css">
+<link rel="stylesheet" href="footer.css">
+<link rel="stylesheet" href=".css">
+<link rel="stylesheet" href=".css">
+<link rel="stylesheet" href=".css">
+<link rel="stylesheet" href=".css">
+</head>
+<body>
+    <!-- Header -->
+   <header>
+ <a href="#" onclick="showSection('home'); return false;">
+    <img src="1.jpg" alt="logo" class="logo">
+</a>
+
+        <button class="cart-button" onclick="showSection('cart')">
+            Корзина (<span id="cart-count">0</span>)
+        </button>
+
+        <button class="burger" id="burgerButton">☰</button> <div class="menu" id="menu">
+            <a href="#home">Главная</a> <a href="#about">О нас</a> <a href="#services">Услуги</a> <a href="#contact">Контакты</a>
+<a > <button id="logoutButton" style="display:none;">Logout</button></a> <!-- Кнопка выхода -->
+        </div>
+
+
+    </header>
+    <h1>DealZone</h1>
+    <!-- Navigation Bar -->
+    <!--  <div class="navbar container">
+                <a href="#">Главная</a>
+                <a href="index 2.html">Каталог</a>
+                <a href="#">О нас</a>
+                <a href="#">Контакты</a>
+                <a href="#">Корзина</a>
+            </div> -->
+
+
+        <div class="container">
+    <div class="navbar container">
+
+        <a href="#" onclick="showSection('home')">Главная</a>
+        <a href="#" onclick="showSection('catalog')">Каталог</a>
+        <a href="#" onclick="showSection('about')">Акции</a>
+        <a href="#" onclick="showSection('contacts')">инфо</a>
+
+<a href="#" onclick="showSection('user')">Профиль</a>
+        <a href="#" onclick="showSection('cart')">Корзина</a>
+    </div>
+
+
+    <!-- Product Section -->
+
+
+
+
+    <section id="home" class="content-section">
+    </section>
+
+ 
+<section id="catalog" class="content-section" style="display: none;"> 
+
+
+            <h2>Наши товары</h2>
+            <div class="products">
+                <!-- Product Card 1 -->
+                <div class="product-card" onclick="toggleFlip(event)">
+                    <div class="product-inner">
+                        <div class="product-front">
+                            <img src="sery.jpeg" alt="Iphone">
+                            <h3>Продукт 1</h3>
+                            <div class="price">
+                                1500
+                            </div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                        <div class="product-back">
+                            <h3>Описание продукта</h3>
+                            <p>
+                                Это продукт с высоким качеством и отличным дизайном.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Card 2 -->
+
+                <div class="product-card" onclick="toggleFlip(event)">
+                    <div class="product-inner">
+                        <div class="product-front">
+                            <img src="sery.jpeg" alt="Продукт 1">
+                            <h3>Продукт 1</h3>
+                            <div class="price">
+                                1500
+                            </div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                        <div class="product-back">
+                            <h3>Описание продукта</h3>
+                            <p>
+                                Это продукт с высоким качеством и отличным дизайном.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="product-card" onclick="toggleFlip(event)">
+                    <div class="product-inner">
+                        <!-- Front Side -->
+                        <div class="product-front">
+                            <img src="sery.jpeg" alt="Продукт 4">
+                            <h3>Продукт 3</h3>
+                            <div class="price">
+                                3500
+                            </div>
+                        </div>
+                        <!-- Back Side -->
+                        <div class="product-back">
+                            <h3>Описание продукта</h3>
+                            <p>
+                                Идеальный выбор для ценителей стиля.
+                            </p>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" onclick="toggleFlip(event)">
+                    <div class="product-inner">
+                        <!-- Front Side -->
+                        <div class="product-front">
+                            <img src="sery.jpeg" alt="Продукт 4">
+                            <h3>Продукт 3</h3>
+                            <div class="price">
+                                3500
+                            </div>
+
+                        </div>
+                        <!-- Back Side -->
+                        <div class="product-back">
+                            <h3>Описание продукта</h3>
+                            <p>
+                                Идеальный выбор для ценителей стиля.
+                            </p>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+
+    <section id="about" class="content-section" style="display: none;">
+        <h2>О нас</h2>
+        <p>
+            DealZone — интернет-магазин стоковых товаров с широким ассортиментом, низкими ценами и быстрой доставкой. У нас вы найдете качественную одежду, электронику, товары для дома и многое другое по сниженным ценам. DealZone — экономьте с удовольствием!
+        </p>
+    </section>
+</div>
+
+<div class="container">
+
+    <section id="contacts" class="content-section" style="display: none;">
+        <h2>Контакты</h2>
+        <p>
+            Свяжитесь с нами:
+        </p>
+        <ul>
+            <li>Телефон: +380 (95) 109-70-83</li>
+            <li>Email: vtj.vlad@gmail.com</li>
+            <li>Адрес: г.Хуст,
+                Украина</li>
+        </ul>
+    </section>
+</div>
+
+<div class="container">
+    <section id="user" class="content-section" style="display: none;">
+        <h2>Профиль пользователя</h2>
+        <p>Добро пожаловать, [Имя пользователя]</p>
+        <p>Здесь вы можете просмотреть свою информацию, историю заказов и изменить настройки аккаунта.</p>
+        
+        <!-- Пример истории заказов -->
+        <div class="order-history">
+            <h3>История заказов</h3>
+            <p>Вы пока не сделали ни одного заказа.</p>
+            <!-- Здесь можно добавить динамическую историю заказов -->
+        </div>
+    </section>
+</div>
+
+<div class="container">
+
+    <section id="cart" class="content-section" style="display: none;">
+        <h2>Корзина</h2>
+        <div class="cart-items"></div>
+        <p>
+            Ваша корзина пуста. Добавьте товары из <a href="#" onclick="showSection('catalog')">каталога</a>.
+        </p>
+    </section>
+
+</div>
+
+
+<div class="container">
+    <section id="payment" class="content-section" style="display: none;">
+        <h2>Оплата</h2>
+        <p>Информация о способах оплаты.</p>
+    </section>
+</div>
+
+<div class="container">
+    <section id="delivery" class="content-section" style="display: none;">
+        <h2>Доставка</h2>
+        <p>Информация о доставке и вариантах получения товаров.</p>
+    </section>
+</div>
+
+
+
+<div class="scrolltop">
+<button onclick="scrollToTop()" id="scrollTopBtn" title="Наверх">ВВЕРХ</button>
+</div>
+
+<div class="navbarbot">
+    <a href="#" onclick="showSection('user')"><i class="fas fa-user"></i></a>
+    <a href="#" onclick="showSection('catalog')"><i class="fas fa-store"></i></a>
+    <a href="#" onclick="showSection('cart')"><i class="fas fa-shopping-cart"></i></a>
+    <a href="#" onclick="showSection('payment')"><i class="fas fa-credit-card"></i></a>
+    <a href="#" onclick="showSection('delivery')"><i class="fas fa-truck"></i></a>
+</div>
+<!-- Footer -->
+<footer>
+    <p>
+        &copy; 2024 Интернет-магазин. Все права защищены.
+    </p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
