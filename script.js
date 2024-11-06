@@ -177,7 +177,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Функция для показа основного контента с данными о пользователе
     function showAppContent(user) {
         const userInfo = document.createElement('div');
-        userInfo.innerHTML = `Welcome, ${user.first_name}! <br> Your username: ${user.username}`;
+        userInfo.innerHTML = `Welcome, ${user.iserId}! <br> Your username: ${user.username}`;
         userInfo.style.textAlign = 'center';
         document.body.insertBefore(userInfo, appContent);
 
