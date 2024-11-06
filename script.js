@@ -179,10 +179,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const userInfo = document.createElement('div');
         userInfo.innerHTML = `Welcome, ${user.first_name}! <br> Your username: ${user.username}`;
         userInfo.style.textAlign = 'center';
-        document.user.insertBefore(userInfo, appContent);
+        document.block.insertBefore(userInfo, appContent);
 
-        appContent.style.display = 'flex';
-        logoutButton.style.display = 'flex';
+        appContent.style.display = 'block';
+        logoutButton.style.display = 'block';
     }
 
     // Обработчик нажатия на кнопку выхода (если требуется)
@@ -229,7 +229,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const userUsername = user.username ? `<p>@${user.username}</p>` : '';
 
         // Добавляем информацию в блок
-        user.innerHTML = `
+        body.innerHTML = `
             <div class="profile">
                 ${userPhoto}
                 ${userName}
@@ -238,11 +238,11 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
 
         // Вставляем блок перед основным контентом
-        document.user.insertBefore(userInfo, appContent);
+        document.body.insertBefore(userInfo, appContent);
 
         // Показываем основной контент
-        appContent.style.display = 'flex';
-        logoutButton.style.display = 'flex';
+        appContent.style.display = 'block';
+        logoutButton.style.display = 'block';
     }
 
     // Обработчик нажатия на кнопку выхода
