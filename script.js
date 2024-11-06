@@ -236,9 +236,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 ${userUsername}
             </div>
         `;
-const = document.getelement.byid("userPage")
+
         // Вставляем блок перед основным контентом
-        document.section.insertBefore(userInfo, userPage);
+        userPage.section.insertBefore(userInfo, appContent);
 
         // Показываем основной контент
         appContent.style.display = 'block';
