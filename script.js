@@ -177,7 +177,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Функция для показа основного контента с данными о пользователе
     function showAppContent(user) {
         const userInfo = document.createElement('div');
-        userInfo.innerHTML = `Welcome, ${user.userId}! <br> Your username: ${user.username}`;
+        userInfo.innerHTML = `Welcome, ${user.first_name}! <br> Your username: ${user.username}`;
         userInfo.style.textAlign = 'center';
         document.body.insertBefore(userInfo, appContent);
 
@@ -225,7 +225,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const userPhoto = `<img src="${userPhotoUrl}" alt="Profile Photo" class="profile-photo">`;
 
         // Имя пользователя и логин
-        const userName = `<h2>${user.userId}</h2>`;
+        const userName = `<h2>${user.first_name}</h2>`;
         const userUsername = user.username ? `<p>@${user.username}</p>` : '';
 
         // Добавляем информацию в блок
