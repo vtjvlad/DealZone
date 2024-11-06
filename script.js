@@ -238,7 +238,7 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
 
         // Вставляем блок перед основным контентом
-        userPage.section.insertBefore(userInfo, appContent);
+        document.section.insertBefore(userInfo, appContent);
 
         // Показываем основной контент
         appContent.style.display = 'block';
