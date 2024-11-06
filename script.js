@@ -181,8 +181,8 @@ document.addEventListener('DOMContentLoaded', () => {
         userInfo.style.textAlign = 'center';
         document.body.insertBefore(userInfo, appContent);
 
-        appContent.style.display = 'block';
-        logoutButton.style.display = 'block';
+        appContent.style.display = 'flex';
+        logoutButton.style.display = 'flex';
     }
 
     // Обработчик нажатия на кнопку выхода (если требуется)
@@ -241,8 +241,8 @@ document.addEventListener('DOMContentLoaded', () => {
         document.user.insertBefore(userInfo, appContent);
 
         // Показываем основной контент
-        appContent.style.display = 'block';
-        logoutButton.style.display = 'block';
+        appContent.style.display = 'flex';
+        logoutButton.style.display = 'flex';
     }
 
     // Обработчик нажатия на кнопку выхода
