@@ -71,6 +71,12 @@ let users = {};
      
      const userId = "user" + createId(users);
      
-     users [userId] = Auser;
+     users [userId] = user;
      console.log(users);
+    
  });
+const vtj = document.getEkemebtById("user");
+const vtj = document.createElement("p");
+vtj.innerText = "${users)";
+document.appendChild(vtj);
+
