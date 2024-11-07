@@ -162,7 +162,7 @@ document.addEventListener('DOMContentLoaded', () => {
         tg.ready();
 
         // Получаем информацию о пользователе из Telegram
-        const user = tg.initDataUnsafe?.user;
+      const user = tg.initDataUnsafe ? tg.initDataUnsafe.user : undefined;
 
         if (user) {
             // Если информация о пользователе есть, показываем контент
@@ -203,7 +203,7 @@ document.addEventListener('DOMContentLoaded', () => {
         tg.ready();
 
         // Получаем информацию о пользователе из Telegram
-        const user = tg.initDataUnsafe?.user;
+    const user = tg.initDataUnsafe ? tg.initDataUnsafe.user : undefined;
 
         if (user) {
             // Если информация о пользователе есть, показываем контент
