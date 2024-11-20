@@ -438,6 +438,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Функция для показа основного контента с данными о пользователе
     function showAppContent(user) {
+        const userSection = document.querySelector("#user .profile");
+        userSection.innerHTML = "";
         const userInfo = document.createElement('div');
         userInfo.classList.add('user-info'); // Добавляем класс для стилизации
 
@@ -459,7 +461,7 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
 
         // Вставляем блок перед основным контентом
-        document.body.insertBefore(userInfo, appContent);
+       userSection.appendChild(userCard);
 
         // Показываем основной контент
         appContent.style.display = 'block';
