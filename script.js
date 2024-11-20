@@ -368,8 +368,7 @@ function renderCategoryProducts(categoryId, container) {
         `;
         container.appendChild(productCard);
     });
-}
-
+};
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -384,7 +383,7 @@ document.addEventListener('DOMContentLoaded', () => {
         tg.ready();
 
         // Получаем информацию о пользователе из Telegram
-      const user = tg.initDataUnsafe ? tg.initDataUnsafe.user : undefined;
+        const user = tg.initDataUnsafe?.user;
 
         if (user) {
             // Если информация о пользователе есть, показываем контент
@@ -425,7 +424,7 @@ document.addEventListener('DOMContentLoaded', () => {
         tg.ready();
 
         // Получаем информацию о пользователе из Telegram
-    const user = tg.initDataUnsafe ? tg.initDataUnsafe.user : undefined;
+        const user = tg.initDataUnsafe?.user;
 
         if (user) {
             // Если информация о пользователе есть, показываем контент
@@ -442,7 +441,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const userInfo = document.createElement('div');
         userInfo.classList.add('user-info'); // Добавляем класс для стилизации
 
-         userPhotoUrl = user.photo_url ? user.photo_url : 'default-profile.png'; // Если фото нет, используется изображение по умолчанию
+        // Профильное фото (если доступно)
+        	 userPhotoUrl = user.photo_url ? user.photo_url : 'default-profile.png'; // Если фото нет, используется изображение по умолчанию
         const userPhoto = `<img src="${userPhotoUrl}" alt="Profile Photo" class="profile-photo">`;
 
         // Имя пользователя и логин
