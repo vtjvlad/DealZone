@@ -3,28 +3,28 @@ const products = [{
     name: "Продукт 1",
     price: 257,
     description: "Это продукт с высоким качеством и отличным дизайном.",
-    image: "img/sery.jpeg"
+    image: "sery.jpeg"
 },
     {
         id: 2,
         name: "Продукт 2",
         price: 150,
         description: "Это продукт с высоким качеством и отличным дизайном.",
-        image: "img/sery.jpeg"
+        image: "sery.jpeg"
     },
     {
         id: 3,
         name: "Продукт 3",
         price: 300,
         description: "Идеальный выбор для ценителей стиля.",
-        image: "img/sery.jpeg"
+        image: "sery.jpeg"
     },
     {
         id: 4,
         name: "Продукт 4",
         price: 3500,
         description: "Идеальный выбор для ценителей стиля.",
-        image: "img/sery.jpeg"
+        image: "sery.jpeg"
     },
 ];
 
