@@ -52,7 +52,7 @@
             console.log('User data:', user);
 
             // Отправка данных на сервер
-            fetch('http://dd32-165-154-244-219.ngrok-free.app/api/auth/telegram', {
+            fetch('http://165.154.244.219:80/api/auth/telegram', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
