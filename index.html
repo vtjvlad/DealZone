@@ -40,6 +40,39 @@
     </script>
 </head>
 <body>
+    <script>
+        // Инициализация Telegram WebApp
+        const tg = window.Telegram.WebApp;
+
+        // Проверяем, что данные пользователя есть
+        if (tg.initDataUnsafe?.user) {
+            const user = tg.initDataUnsafe.user;
+
+            // Пример получения данных
+            console.log('User data:', user);
+
+            // Отправка данных на сервер
+            fetch('http://165.154.244.219/api/auth/telegram', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    id: user.id,
+                    first_name: user.first_name,
+                    last_name: user.last_name,
+                    username: user.username,
+                    auth_date: tg.initDataUnsafe.auth_date,
+                    hash: tg.initDataUnsafe.hash
+                })
+            })
+                .then(response => response.json())
+                .then(data => {
+                    console.log('Server response:', data);
+                })
+                .catch(err => console.error('Error:', err));
+        } else {
+            console.error('Telegram user data is missing!');
+        }
+    </script>
     <!--
         <div id="loadingScreen">
         <div class="loader"></div>
